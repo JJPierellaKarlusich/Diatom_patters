@@ -1,6 +1,6 @@
 Code and datasets for: 
 
-Pierella Karlusich et al (2024) Patterns and drivers of diatom diversity and abundance in the global ocean. bioRxiv https://doi.org/10.1101/2024.06.08.598090
+Pierella Karlusich et al (2024) #Patterns and drivers of diatom diversity and abundance in the global ocean#. bioRxiv https://doi.org/10.1101/2024.06.08.598090
 
 Directories:
 -metaB: scripts and datasets for metabarcoding analyses
