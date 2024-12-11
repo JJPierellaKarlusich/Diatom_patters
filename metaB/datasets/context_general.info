@@ -1,0 +1,9 @@
+name	parameter	pi	method	comment	table
+event_date	Event date	Pesant	registered at PANGAEA, Data Publisher for Earth and Environmental Science (www.pangaea.de)	yyyy-mm-ddThh:mm:ss	method
+event_latitude	Event latitude	Pesant	registered at PANGAEA, Data Publisher for Earth and Environmental Science (www.pangaea.de)	dd.dddddd north	method
+event_longitude	Event longitude	Pesant	registered at PANGAEA, Data Publisher for Earth and Environmental Science (www.pangaea.de)	ddd.dddddd east	method
+depth_nominal	Depth, nominal	Pesant		from which this sample was collected	method
+sample_material	Sample material	Pesant	described in (Pesant et al. 2017)	TARA_station#_environmental-feature_size-fraction	method
+marine_biome	Marine biome (MP biome)	Pesant, Stephane (https://orcid.org/0000-0002-4936-5209, spesant@marum.de)	Longhurst (2007) (URI: http://www.sciencedirect.com/science/book/9780124555211)	""	watercolumn
+ocean_region	Ocean and sea region (OS region)	Pesant, Stephane (https://orcid.org/0000-0002-4936-5209, spesant@marum.de)	IHO General Sea Areas (1953) registered at www.marineregions.org (URI: http://marineregions.org/)	[abbreviation] full name (MRGID:ID)	watercolumn
+biogeo_province	Biogeographical province (BG province)	Pesant, Stephane (https://orcid.org/0000-0002-4936-5209, spesant@marum.de)	Longhurst (2007) registered at marineregions.org (URI: http://marineregions.org/)	[abbreviation] full name (MRGID:ID)	watercolumn
