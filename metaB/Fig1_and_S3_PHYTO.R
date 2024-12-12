@@ -6,11 +6,17 @@ library(ggplot2)
 # ASVs with taxonomy with confidence > 50% by idtaxa
 
 # original table from https://zenodo.org/records/13881418
+# Download the original table from Zenodo
+system("wget https://zenodo.org/records/13881418/files/TARA-Oceans_18S-V9_dada2_table.tsv.gz -P datasets/")
+# Load the V9 table
 v9 <- fread(file="datasets/TARA-Oceans_18S-V9_dada2_table.tsv.gz", sep="\t", quote=F)
 v9 <- v9[grep(v9$taxonomy, pattern="^Root;Eukaryota;"),]
 v9$method <- 'V9'
 
 # original table from https://zenodo.org/records/13881376
+# Download the original table from Zenodo (V4)
+system("wget https://zenodo.org/records/13881376/files/TARA-Oceans_18S-V4_dada2_table.tsv.gz -P datasets/")
+# Load the V4 table
 v4 <- fread(file="datasets/TARA-Oceans_18S-V4_dada2_table.tsv.gz", sep="\t", quote=F)
 v4 <- v4[grep(v4$taxonomy, pattern="^Root;Eukaryota;"),]
 v4$method <- 'V4'
