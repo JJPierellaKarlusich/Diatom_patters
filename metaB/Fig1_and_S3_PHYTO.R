@@ -23,6 +23,8 @@ v4$method <- 'V4'
 
 # Read sample metadata
 # original table from https://zenodo.org/records/7229815
+# Download the original contexual data table from Zenodo (V4)
+system("wget https://zenodo.org/records/7229815/files/context_general.tsv -P datasets/")
 mysamples <- read.csv("datasets/context_general.tsv", sep = "\t")
 mysamples <- mysamples %>%
   filter(depth %in% c("SRF", "DCM")) %>%
