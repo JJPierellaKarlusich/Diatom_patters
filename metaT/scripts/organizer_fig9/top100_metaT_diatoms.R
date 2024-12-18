@@ -320,7 +320,7 @@ p_size
 #--------Plot: OR
 
 
-oceans = read.table(file="~/Documents/Tara/Tara_from_website/metaT/scripts/analysis/station_ocean.tsv", header=TRUE)
+oceans = read.table(file="contextual_data/station_ocean.tsv", header=TRUE)
 oceans$station_whole = NULL
 OR_abundance = merge(mydata, oceans, by = "station", all.x =TRUE)
 rm(oceans)
