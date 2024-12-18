@@ -14,7 +14,7 @@ pfam_data_merged <- unique(mydata[c("pfamAcc", "Description")])
 rm(mydata)
 
 ################## ribosomal proteins:
-pfam_data = read.csv(file="~/Documents/Tara/Karen_Sep2021/pierella/metaT_genera/data/PfamA.list",  header =T, sep="\t")
+pfam_data = read.csv(file="contextual_data/PfamA.list",  header =T, sep="\t")
 colnames(pfam_data)=c("pfamAcc","Id","Description")
 # algunos pfams tienen exactamente la misma descripcion, asi que a esos le agrego su abreviacion para distinguirlos
 pfam_data[duplicated(pfam_data$Description),]$Description <- paste(pfam_data[duplicated(pfam_data$Description),]$Id, pfam_data[duplicated(pfam_data$Description),]$Description, sep=" | ")
