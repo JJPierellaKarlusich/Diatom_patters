@@ -34,7 +34,7 @@ mydata <- mydata[mydata$pfamAcc!="PF00510",] # COX3 | Cytochrome c oxidase subun
 
 #  plastid and mitochondrial ribosomes
 mydata <- mydata[mydata$pfamAcc!="PF00861",] ##Ribosomal L18 of archaea, bacteria, mitoch. and chloroplast
-pfam_data = read.csv(file="~/Documents/Tara/Karen_Sep2021/pierella/metaT_genera/data/PfamA.list",  header =T, sep="\t")
+pfam_data = read.csv(file="contextual_data/PfamA.list",  header =T, sep="\t")
 colnames(pfam_data)=c("pfamAcc","Id","Description")
 # algunos pfams tienen exactamente la misma descripcion, asi que a esos le agrego su abreviacion para distinguirlos
 pfam_data[duplicated(pfam_data$Description),]$Description <- paste(pfam_data[duplicated(pfam_data$Description),]$Id, pfam_data[duplicated(pfam_data$Description),]$Description, sep=" | ")
@@ -115,7 +115,7 @@ mydata$rpkm.y <- NULL
 
 ################## entering the protein description for each pfam:
 # Downloaded from: https://www.ebi.ac.uk/interpro/entry/pfam/#table
-pfam_data = read.csv(file="~/Documents/Tara/Tara_from_website/metaT/scripts/analysis/PfamA.list",  header =T, sep="\t")
+pfam_data = read.csv(file="contextual_data/PfamA.list",  header =T, sep="\t")
 
 colnames(pfam_data)=c("pfamAcc","Id","Description")
 # algunos pfams tienen exactamente la misma descripcion, asi que a esos le agrego su abreviacion para distinguirlos
