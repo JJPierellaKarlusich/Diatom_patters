@@ -11,7 +11,7 @@ library(cowplot)
 
 # Select here the diatom dataset (Bacillariophyta)
 #mydata <- read.csv(file.choose(), sep="\t", header=T)
-mydata <- read.csv("~/Documents/Tara/Tara_from_website/metaT/datasets/metaT/Bacillariophyta.MATOU-v2.Pfam.metaT.tsv", sep="\t", header=T)
+mydata <- read.csv("./datasets/Pfam_sums/metaT/Bacillariophyta.MATOU-v1.5.Pfam.metaT.tsv.gz", sep="\t", header=T)
 
 # remove PF02100 (Ornithine decarboxylase antizyme)
 mydata <- mydata[mydata$pfamAcc!="PF02100",]
