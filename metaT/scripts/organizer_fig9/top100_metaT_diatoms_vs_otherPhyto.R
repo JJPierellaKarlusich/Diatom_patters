@@ -47,7 +47,7 @@ mytaxons <- c("Chlorarachniophyceae", "Chlorophyta", "Cryptophyta", "Dictyochoph
 for (i in mytaxons){
   print(i)
   
-  mydata <- read.csv(paste("~/Documents/Tara/Tara_from_website/metaT/datasets/metaT/", i, ".MATOU-v2.Pfam.metaT.tsv" ,sep=""), sep="\t", header=T)
+  mydata <- read.csv(paste("../datasets/Pfam_sums/metaT/", i, ".MATOU-v1.5.Pfam.metaT.tsv.gz" ,sep=""), sep="\t", header=T)
 
 mydata$station <- gsub(mydata$sample, pattern="[A-Z].*", replacement="")
 mydata$depth <- gsub(mydata$sample, pattern="^[0-9]*", replacement="")
