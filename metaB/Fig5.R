@@ -163,6 +163,8 @@ rm(v4_richness, v9_richness)
 
 genus_sum <- aggregate(data=myabundance, FUN=sum, cbind(percDia, percEuk) ~ genus + method)
 
+genus_sum$genus <- factor(genus_sum$genus, levels=rev(unique(sort(genus_sum$genus))))
+
 p_genus <- ggplot(genus_sum, aes(x=percEuk, y=genus, fill=method)) + 
   geom_bar(position="dodge", stat="identity") + 
   scale_x_continuous(trans = scales::log1p_trans(),
