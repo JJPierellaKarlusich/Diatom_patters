@@ -10,8 +10,8 @@ library(scales)
 #rm(depth_abundance, df, OR_abundance, p, p1, p2, p3, p4, size_abundance, df_ranked, pfam_abundance)
 
 # Selecting columns by name
-#pfam_data_merged <- unique(mydata[c("pfamAcc", "Description")])
-#rm(mydata)
+pfam_data_merged <- unique(mydata[c("pfamAcc", "Description")])
+rm(mydata)
 
 ################## ribosomal proteins:
 pfam_data = read.csv(file="contextual_data/PfamA.list",  header =T, sep="\t")
