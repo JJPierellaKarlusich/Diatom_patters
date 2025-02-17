@@ -13,7 +13,7 @@ library(GGally)
 # Upload the list of diatom sequences coding for LHCs (PF00504) in version 1.5 of the Marine Atlas of Tara Oceans Unigenes
 # The functional classification into the main subfamilies (LHCf, LHCq, LHCr, LHCx and LHCz) was performed by phylogenetic placement 
 # of the translated sequences on the reference phylogeny described in Kumazawa et al. 2022 Physiologia Plantarum 174, e13598
-lhc <- fread(file='../datasets/LHC/LHC.diatoms.seqs.function.tsv')
+lhc <- fread(file='../datasets/LHC/LHC.diatoms.MATOUv1.5.seqs.function.tsv.gz')
 lhc$unigene <- sub("MATOU-v1.5.", "", lhc$unigene)
 lhc$seq.text <- NULL
 
