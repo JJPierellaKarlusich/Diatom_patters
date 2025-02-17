@@ -496,7 +496,7 @@ Cyclotella <- plot_map('Cyclotella', '0.8-5/2000')
 Pleurosigma <- plot_map('Pleurosigma', '3/5-20')
 Coscinodiscus <- plot_map('Coscinodiscus', '3/5-20')
 
-figS14 <- plot_grid(
+figS11 <- plot_grid(
   Chaetoceros, Thalassiosira, Actinocyclus, Pseudonitzschia, Fragilaria, Porosira,
   Proboscia, Corethron, Leptocylindrus, Guinardia, Eucampia, Skeletonema,
   Asteromphalus, Nitzschia, Bacteriastrum, Minidiscus, Fragilariopsis, Rhizosolenia,
@@ -505,5 +505,5 @@ figS14 <- plot_grid(
   ncol = 6, nrow = 5
 )
 
-figS14
-#ggsave(figS14, file='figS14.pdf', width = 29.7, height = 15)
+figS11
+#ggsave(figS11, file='figS11.pdf', width = 29.7, height = 15)
