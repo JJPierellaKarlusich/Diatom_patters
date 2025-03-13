@@ -34,10 +34,7 @@ mydata$filter <- gsub(mydata$sample, pattern="[0-9]*$", replacement="")
 mydata$filter <- gsub(mydata$filter, pattern="^.*[0-9]", replacement="")
 mydata$seqcode <- gsub(mydata$sample, pattern=".*[A-Z]", replacement="")
 
-# codes to real info:
-
-# some conditions do not have any matching rows, causing the replacement operation to fail because it's trying to replace nothing with something, hence the error.
-# A good way to avoid this error is to use the dplyr package and its mutate() function combined with case_when(). This allows you to change the seqcode column based on multiple conditions.
+# sample codes to real info:
 
 library(dplyr)
 mydata <- mydata %>%
